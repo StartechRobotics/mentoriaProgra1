@@ -23,6 +23,7 @@ public class Robot extends TimedRobot {
   public SparkMax motorDerecho2;
   public SparkMax motorIzquierdo1;
   public SparkMax motorIzquierdo2;
+  public SparkMax motorExtra;
 
   public Robot() { //ESTO SE EJECUTA AL INICIO DEL ROBOT (CUANDO SE ENCIENDE / ACTIVA)
 
@@ -33,6 +34,8 @@ public class Robot extends TimedRobot {
     motorDerecho2 = new SparkMax(2, MotorType.kBrushed);
     motorIzquierdo1 = new SparkMax(3, MotorType.kBrushed);
     motorIzquierdo2 = new SparkMax(4, MotorType.kBrushed);
+
+    motorExtra = new SparkMax(5, MotorType.kBrushless);
   }
 
   // WPI LIB METHODS
